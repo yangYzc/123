@@ -1,0 +1,85 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "完成项目文档编写",
+      "description": "编写详细的项目文档，包括安装指南、使用说明和API文档",
+      "priority": "high",
+      "status": "pending",
+      "assignee": "",
+      "dueDate": "2025-09-01",
+      "tags": ["文档", "高优先级"],
+      "createdAt": "2025-08-23",
+      "updatedAt": "2025-08-23"
+    },
+    {
+      "id": 2,
+      "title": "实现用户认证功能",
+      "description": "开发用户登录、注册、密码重置等认证相关功能",
+      "priority": "high",
+      "status": "pending",
+      "assignee": "",
+      "dueDate": "2025-08-30",
+      "tags": ["开发", "后端", "安全"],
+      "createdAt": "2025-08-23",
+      "updatedAt": "2025-08-23"
+    },
+    {
+      "id": 3,
+      "title": "修复数据库连接问题",
+      "description": "解决数据库连接超时和连接池配置问题",
+      "priority": "high",
+      "status": "in_progress",
+      "assignee": "开发团队",
+      "dueDate": "2025-08-25",
+      "tags": ["bug修复", "数据库"],
+      "createdAt": "2025-08-23",
+      "updatedAt": "2025-08-23"
+    },
+    {
+      "id": 4,
+      "title": "优化页面加载速度",
+      "description": "优化前端资源加载，提升页面响应速度",
+      "priority": "medium",
+      "status": "pending",
+      "assignee": "",
+      "dueDate": "2025-09-05",
+      "tags": ["优化", "前端", "性能"],
+      "createdAt": "2025-08-23",
+      "updatedAt": "2025-08-23"
+    },
+    {
+      "id": 5,
+      "title": "添加单元测试",
+      "description": "为核心功能模块编写单元测试，提高代码质量",
+      "priority": "medium",
+      "status": "pending",
+      "assignee": "",
+      "dueDate": "2025-09-10",
+      "tags": ["测试", "质量保证"],
+      "createdAt": "2025-08-23",
+      "updatedAt": "2025-08-23"
+    },
+    {
+      "id": 6,
+      "title": "美化界面设计",
+      "description": "改进用户界面设计，提升用户体验",
+      "priority": "low",
+      "status": "pending",
+      "assignee": "",
+      "dueDate": "2025-09-15",
+      "tags": ["设计", "UI/UX"],
+      "createdAt": "2025-08-23",
+      "updatedAt": "2025-08-23"
+    }
+  ],
+  "metadata": {
+    "total": 6,
+    "pending": 4,
+    "in_progress": 1,
+    "completed": 0,
+    "high_priority": 3,
+    "medium_priority": 2,
+    "low_priority": 1
+  }
+}
