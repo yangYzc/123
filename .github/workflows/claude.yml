@@ -3,6 +3,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  id-token: write 
 
 on:
   issue_comment:
@@ -15,12 +16,8 @@ jobs:
     if: contains(github.event.comment.body, '@claude')
     runs-on: ubuntu-latest
     env:
-      # 从 Secrets 注入，避免把机密写死在仓库里
       ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
       ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
-      # 可选：如果你的网关用 X-Api-Key，则也传入（和 AUTH_TOKEN 二选一或都给）
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      # 关闭非必要流量（遥测/错误上报/bug 命令/自动更新）
       CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
     steps:
       - uses: actions/checkout@v4
