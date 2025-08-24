@@ -1,28 +1,33 @@
-# Shared Configuration File - Branch 1 Version
+# Shared Configuration File - Branch 2 Version
 # This file will have different content in each branch to cause merge conflicts
 
 APP_SETTINGS = {
     "name": "MergeTestApp",
-    "version": "1.0.0-branch1", 
-    "author": "Branch 1 Developer",
-    "description": "This is the branch 1 version of the application",
+    "version": "2.0.0-branch2",
+    "author": "Branch 2 Developer Team", 
+    "description": "This is the enhanced branch 2 version with advanced features",
     "features": [
         "user_authentication",
-        "data_processing", 
-        "branch1_special_feature"
+        "advanced_data_processing",
+        "real_time_analytics", 
+        "branch2_premium_feature",
+        "machine_learning_integration"
     ],
     "database_config": {
-        "type": "postgresql",
-        "connection_string": "postgresql://branch1:password@localhost/branch1_db"
+        "type": "mongodb",
+        "connection_string": "mongodb://branch2:securepass@localhost:27017/branch2_db"
     },
     "api_endpoints": [
-        "/api/v1/users",
-        "/api/v1/auth", 
-        "/api/v1/branch1-data"
+        "/api/v2/users",
+        "/api/v2/auth",
+        "/api/v2/analytics", 
+        "/api/v2/branch2-premium",
+        "/api/v2/ml-models"
     ]
 }
 
-# Branch 1 specific function
-def initialize_branch1_features():
-    print("Initializing Branch 1 specific features...")
-    return "Branch 1 initialization complete"
+# Branch 2 specific function
+def initialize_branch2_features():
+    print("Initializing Branch 2 advanced features...")
+    print("Loading ML models and analytics engine...")
+    return "Branch 2 premium initialization complete"
